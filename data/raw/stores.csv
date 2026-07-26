@@ -1,0 +1,4 @@
+StoreCode,StoreName,City,StateCode,Postcode,StoreType
+STR001,Brisbane Central,Brisbane,QLD,4000,Metro
+STR002,South Brisbane,Brisbane,QLD,4101,Metro
+STR003,Sunshine Coast,Palmview,QLD,4553,Suburban

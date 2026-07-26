@@ -1,0 +1,9 @@
+SKU,ProductName,CategoryName,BrandName,UnitOfMeasure,UnitCost,RetailPrice,ShelfLifeDays
+SKU001,Full Cream Milk 2L,Dairy,Farm Fresh,Each,2.2,3.8,10.0
+SKU002,White Bread 700g,Bakery,Daily Bake,Each,1.8,3.2,5.0
+SKU003,Orange Juice 2L,Beverages,Coastal,Each,3.1,5.5,30.0
+SKU004,Sparkling Water 10 Pack,Beverages,Clear Springs,Pack,5.5,9.0,365.0
+SKU005,Potato Chips 175g,Snacks,Crunch Time,Each,1.7,3.5,180.0
+SKU006,Chocolate Bar 50g,Snacks,Cocoa House,Each,0.9,2.0,270.0
+SKU007,Paper Towels 4 Pack,Household,HomeCare,Pack,4.2,7.5,
+SKU008,Dishwashing Liquid 1L,Household,CleanHome,Each,2.8,5.0,

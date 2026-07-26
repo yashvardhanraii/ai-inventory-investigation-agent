@@ -1,0 +1,4 @@
+SupplierCode,SupplierName,ContactName,ContactEmail,ContactPhone,LeadTimeDays,MinimumOrderValue
+SUP001,Fresh Foods Australia,Mia Wilson,mia@freshfoods.com.au,07 3000 1001,3,250.0
+SUP002,National Grocery Supply,Jack Brown,jack@ngs.com.au,07 3000 1002,5,500.0
+SUP003,Coastal Beverages,Sophie Taylor,sophie@coastalbeverages.com.au,07 3000 1003,4,300.0
