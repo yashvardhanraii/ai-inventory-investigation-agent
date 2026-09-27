@@ -87,7 +87,7 @@ Example:
 }
 ```
 
-```markdown
+```text
 
 ## Azure AI Foundry
 
