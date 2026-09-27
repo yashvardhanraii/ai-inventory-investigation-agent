@@ -12,20 +12,6 @@ This project automates that investigation workflow by combining Python, Azure SQ
 
 ![AI Inventory Investigation Agent Process Map](process-map.svg)
 
-[View full process map](process-map.svg)
-
-### Workflow
-
-ERP Data  
-→ Python ETL Pipeline  
-→ Data Quality Validation  
-→ Azure SQL Database  
-→ KPI Calculations + Rule Engine  
-→ Investigation Payload  
-→ Azure AI Foundry  
-→ Explanation + Recommendations  
-→ Power BI Dashboard
-
 ## Data Pipeline
 
 The Python ETL pipeline extracts CSV-based operational data and performs initial transformation and validation.
@@ -99,3 +85,87 @@ Example:
     "SUPPLIER_DELIVERY_OVERDUE"
   ]
 }
+
+## Azure AI Foundry
+
+The structured investigation payload is sent to Azure AI Foundry for interpretation.
+
+The AI layer produces:
+
+- likely cause
+
+- operational severity
+
+- explanation of contributing factors
+
+- recommended follow-up actions
+
+The model is instructed to use only the supplied evidence and identify when additional information is required.
+
+The AI integration is located in:
+
+`ai/investigation_agent.py`
+
+## Human-in-the-Loop
+
+The system is designed to support operational decision-making rather than automatically execute inventory actions.
+
+AI-generated explanations and recommendations are reviewed by a user before action is taken.
+
+This keeps final responsibility with the decision-maker while using AI to reduce investigation effort.
+
+## Power BI
+
+Investigation results are surfaced in Power BI alongside operational metrics such as:
+
+- inventory anomalies
+
+- affected products
+
+- issue severity
+
+- triggered rules
+
+- supplier performance
+
+- recommended actions
+
+- recurring inventory issues
+
+This allows users to review both the underlying evidence and the AI-generated explanation in one place.
+
+## Example Investigation
+
+**Issue**
+
+SKU-1045 has fallen below its reorder point.
+
+**Evidence**
+
+- Quantity on hand: 12
+
+- Reorder point: 30
+
+- Recent sales activity: High
+
+- Outstanding purchase order: 50 units
+
+- Supplier delivery: 3 days overdue
+
+- Triggered rules:
+
+  - BELOW_REORDER_POINT
+
+  - SUPPLIER_DELIVERY_OVERDUE
+
+**AI Explanation**
+
+The low inventory level is likely being driven by continued sales activity combined with a delayed supplier delivery. The current stock level is below the defined reorder threshold, increasing the risk of a stock-out.
+
+**Recommended Action**
+
+Review the outstanding supplier delivery, confirm the revised delivery date, and consider an urgent replenishment or alternate supplier if the delay continues.
+
+## Project Outcome
+
+The project demonstrates how generative AI can be embedded into an operational analytics workflow rather than used as a standalone chatbot.
