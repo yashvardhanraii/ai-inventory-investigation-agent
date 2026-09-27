@@ -85,8 +85,9 @@ Example:
     "SUPPLIER_DELIVERY_OVERDUE"
   ]
 }
+```
 
-```text
+```markdown
 
 ## Azure AI Foundry
 
