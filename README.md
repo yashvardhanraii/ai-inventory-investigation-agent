@@ -10,9 +10,9 @@ This project automates that investigation workflow by combining Python, Azure SQ
 
 ## Architecture
 
-![AI Inventory Investigation Agent Process Map](docs/process-map.svg)
+![AI Inventory Investigation Agent Process Map](process-map.svg)
 
-[View full process map](docs/process-map.svg)
+[View full process map](process-map.svg)
 
 ### Workflow
 
