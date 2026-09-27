@@ -86,6 +86,8 @@ Example:
   ]
 }
 
+```text
+
 ## Azure AI Foundry
 
 The structured investigation payload is sent to Azure AI Foundry for interpretation.
